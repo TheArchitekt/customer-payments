@@ -14,6 +14,13 @@ def customer_payments(customer_data):
 
         print(f"{customer_name} paid ${price_paid}, expected to pay ${expected}.")
 
+        if expected < price_paid:
+            print(f"{given_name} overpaid.")
+        elif expected > price_paid:
+            print(f"{given_name} underpaid.")
+
+
+
     customer_information.close()
 
 customer_payments("customer-orders.txt")
