@@ -64,4 +64,6 @@ def customer_payments(customer_data):
     customer_information = open(customer_data)
 
     for line in customer_information:
+
         info = line.split("|")
+        customer_name = info[1]
