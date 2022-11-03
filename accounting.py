@@ -62,3 +62,6 @@ if customer6_expected != customer6_paid:
 
 def customer_payments(customer_data):
     customer_information = open(customer_data)
+
+    for line in customer_information:
+        info = line.split("|")
